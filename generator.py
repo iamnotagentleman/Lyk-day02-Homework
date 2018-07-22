@@ -1,8 +1,5 @@
 import random
 class Generator():
-    def __init__(self):
-        self.name = ""
-        self.surname = ""
     def namegenerator(self):
         rand_int = random.randint(0,12)
         name_dict = {
@@ -53,4 +50,3 @@ class Generator():
         haber = haber.format(self.namegenerator(),self.surnamegenerator(),random.randint(0,100))
         haber = haber.replace("('","")
         return haber
-g = Generator()
